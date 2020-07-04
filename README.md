@@ -5,3 +5,4 @@ Create a div with the class "add-remove-tbl", and put the table inside that div.
 Make sure to put "Add Row" button outside the table.
 Add class "addRowBtn" to the "Add Row" button.
 Add class "removeRowBtn" to the "Remove Row" button.
+Initialize it with "$('body').patuta();"
