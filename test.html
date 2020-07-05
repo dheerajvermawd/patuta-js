@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<title>Hi</title>
+		
+		<style>
+			body {
+				font-family: 'arial', sans-serif;
+			}
+			.main-container{
+        width: 100%; 
+      }
+			.inner-container{
+        width: 100px; 
+        height: 150px; 
+        margin: auto; 
+        position: relative; 
+        top: 50%; transform: 
+        translateY(-50%);
+      }
+			.border{border: 1px solid #333;}
+			.color-blue{
+				color: blue;
+			}
+      .content{
+        width: 700px;
+        margin: 0 auto;
+      }
+      table {
+      	width: 100%;
+      	border: 1px solid black;
+      	border-collapse: collapse;
+      }
+      table tr th, table tr td {
+      	border: 1px solid black;
+      	padding: 5px;
+      }
+      table thead {
+      	background-color: black;
+      }
+      thead th {
+      	color: white;
+      }
+		</style>
+	</head>
+	<body>
+		<div class="main-container add-remove-tbl">
+			<div class="table-responsive">
+      <table class="">
+      	<thead>
+      		<tr>
+      			<th width="150">Name</th>
+      			<th>Designation</th>
+      			<th>Action</th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<td><a href="#">Dheeraj Verma</a></td>
+      			<td class="add-remove-tbl">
+  					<table class="nested">
+      					<thead>
+      						<tr>
+      							<th>Col 1</th>
+      							<th>Col 2</th>
+      							<th>Action</th>
+      						</tr>
+      					</thead>
+      					<tbody>
+      						<tr>
+      							<td>25</td>
+      							<td>50</td>
+      							<td>
+      								<button class="removeRowBtn">Remove</button>
+      							</td>
+      						</tr>
+      					</tbody>
+      				</table>
+      			<div class="pull-right">
+      				<button type="button" class="addRowBtn" style="float:right;">Add Row</button>
+      			</div>
+      			</td>
+      			<td>
+      				<button class="removeRowBtn">Remove</button>
+      			</td>
+      		</tr>
+      	</tbody>
+      </table>
+  </div>
+  <div class="pull-right">
+      <button type="button" class="addRowBtn" style="float:right;">Add Row</button>
+		</div>
+</div>
+		<script src="js/patuta.min.js"></script>
+		<script>
+			$('body').patuta();	
+		</script>
+	</body>
+</html>
