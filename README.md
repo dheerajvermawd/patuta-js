@@ -6,3 +6,4 @@ Make sure to put "Add Row" button outside the table.
 Add class "addRowBtn" to the "Add Row" button.
 Add class "removeRowBtn" to the "Remove Row" button.
 Initialize it with "$('body').patuta();"
+In case you want to add the "Add/Remove funcationality" to the nested table, just add the class "add-remove-tbl" to your nested table's parent "td" and add the class "nested" to your nested table.
